@@ -11,15 +11,14 @@
         <div id="start-screen" class="screen">
             <h1>Подходит ли тебе профессия косметолога?</h1>
             <p>Пройди тест из 8 вопросов и узнай свой потенциал в бьюти-индустрии.</p>
-            <button onclick="startQuiz()">Начать тест</button>
+            <button id="start-btn">Начать тест</button>
         </div>
 
         <div id="question-screen" class="screen hidden">
             <div class="progress-bar"><div id="progress"></div></div>
             <div id="question-number">Вопрос 1/8</div>
             <h2 id="question-text">Текст вопроса</h2>
-            <div id="options">
-                </div>
+            <div id="options"></div>
         </div>
 
         <div id="form-screen" class="screen hidden">
@@ -39,6 +38,7 @@
             <button onclick="location.reload()">Пройти заново</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

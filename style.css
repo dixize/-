@@ -1,0 +1,82 @@
+:root {
+    --primary: #a855f7;
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#quiz-container {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hidden { display: none; }
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.option-btn {
+    background: #334155;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.option-btn:hover { background: #475569; }
+
+.progress-bar {
+    background: #334155;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#progress {
+    background: var(--primary);
+    width: 0%;
+    height: 100%;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    box-sizing: border-box;
+}
+
+.status-badge {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px 0;
+    color: var(--primary);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Профессия косметолог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="start-screen" class="screen">
+            <h1>Подходит ли тебе профессия косметолога?</h1>
+            <p>Пройди тест из 8 вопросов и узнай свой потенциал в бьюти-индустрии.</p>
+            <button onclick="startQuiz()">Начать тест</button>
+        </div>
+
+        <div id="question-screen" class="screen hidden">
+            <div class="progress-bar"><div id="progress"></div></div>
+            <div id="question-number">Вопрос 1/8</div>
+            <h2 id="question-text">Текст вопроса</h2>
+            <div id="options">
+                </div>
+        </div>
+
+        <div id="form-screen" class="screen hidden">
+            <h2>Почти готово!</h2>
+            <p>Введите ваши данные, чтобы получить результат теста.</p>
+            <form id="lead-form">
+                <input type="text" id="user-name" placeholder="Ваше имя" required>
+                <input type="text" id="user-phone" placeholder="Telegram / WhatsApp" required>
+                <button type="submit">Показать результат</button>
+            </form>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>Ваш результат:</h2>
+            <div id="result-status" class="status-badge"></div>
+            <p id="result-desc"></p>
+            <button onclick="location.reload()">Пройти заново</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
